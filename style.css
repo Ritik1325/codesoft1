@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("https://i.pinimg.com/originals/8a/06/98/8a069893fe5926671cdd4300fd00397d.png");
+    background-size: contain;
+    background-repeat: repeat;
+    border-bottom: 2px black solid;
+}
+.logos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 16px 4px;
+    font-weight: 700;
+    z-index: 1;
+    color: chocolate;
+}
+.logos a{
+    text-decoration: none;
+    color: white;
+    border: 2px black solid;
+    background-color: orangered;
+    padding: 16px;
+    margin: 4px 16px 4px;
+    border-radius: 20px;
+    box-shadow: 4px -4px 12px black;
+}
+.main{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 90vh;
+   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.content h1{
+    font-size:40px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-transform: capitalize;
+    color:chocolate;
+}
+.content a{
+    border: 2px black solid;
+    text-decoration: none;
+    color: white;
+    background-color:orangered;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 12px 0 12px;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color:chocolate;
+}
+p.shipping{
+   letter-spacing: 0;
+   font-size: 16px;
+   font-weight: 200;
+  
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 600px;
+    height: 500px;
+    mix-blend-mode: multiply;
+}
+.footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: royalblue;
+}
+.knowus{
+    display: flex;
+    gap: 180px;
+}
+.knowus a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px;
+    transition: 0.45s ease;
+}
+.knowus a:hover{
+    color: skyblue;
+    transform: translateY(-8px);
+}
